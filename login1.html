@@ -1,4 +1,4 @@
-<!-- <%@ page import = "java.io.*,java.util.*" %>
+<%@ page import = "java.io.*,java.util.*" %>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -15,13 +15,13 @@ String hi="no";
 Connection connection = null;
 Statement statement = null;
 ResultSet resultSet = null;
-%> -->
+%>
 <!DOCTYPE html>
 <html>
   <head>
     <title>E Healthcare | Log In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
       .mainbody{height:100vh;font-family:var(--fontfamily05);}
       .navbar{padding:0 50px;}
@@ -83,7 +83,7 @@ ResultSet resultSet = null;
               <div class="formtxt2 formtxt0">Password</div>
               <input type="text" class="inputbox2 inputbox0 border" name="userpass">
               <div class="formtxt1 formtxt0">
-                <!-- <%
+                <%
                     String inputid = request.getParameter("userid");
                     String inputpass = request.getParameter("userpass");
 //                    out.print("user id/email "+paramValue);
@@ -116,7 +116,7 @@ ResultSet resultSet = null;
                     }catch(Exception ex) {
                         System.out.println(ex.toString());
                     }
-                %> -->
+                %>
               </div>
               <div class="loginbtnbox">
                 <input type = "submit" class="loginbtn" value = "Log In" />
